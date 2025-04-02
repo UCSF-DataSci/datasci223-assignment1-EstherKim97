@@ -55,6 +55,10 @@ Replace the "Part 1" section with:
 - Topics you would like to see included
 - A musical recommendation and a link to something about it (song, album, artist)
 
+Hello. My name is SeonMin. I'm here to learn applied, hands-on Python skills that I can use in real-world projects. I’m especially interested in exploring how Python is used across different applications — and I’d love to learn more about using PyTorch, especially in healthcare industry.
+
+Music rec: [Shaun - Way Back Home](https://youtu.be/1kehqCLudyg?si=h58zY9JLPNQD2ZiE)
+
 ### Part 2: Complete the email_hasher.py Script
 The email_hasher.py script should:
 1. Accept an email address as a command line argument
