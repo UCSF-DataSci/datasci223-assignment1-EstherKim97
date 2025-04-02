@@ -49,12 +49,6 @@ This assignment will help you practice:
 - Clone the repository to your local machine to begin working on the assignment
 
 ### Part 1: Update this README.md
-Replace the "Part 1" section with:
-- A brief introduction about yourself (first name only)
-- What you're hoping to get out of this course
-- Topics you would like to see included
-- A musical recommendation and a link to something about it (song, album, artist)
-
 Hello. My name is SeonMin. I'm here to learn applied, hands-on Python skills that I can use in real-world projects. I’m especially interested in exploring how Python is used across different applications — and I’d love to learn more about using PyTorch, especially in healthcare industry.
 
 Music rec: [Shaun - Way Back Home](https://youtu.be/1kehqCLudyg?si=h58zY9JLPNQD2ZiE)
