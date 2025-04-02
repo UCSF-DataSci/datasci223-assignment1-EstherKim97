@@ -27,8 +27,13 @@ def hash_email(email):
     """
     # TODO: Implement this function
     # 1. Convert the email string to bytes
+    email_bytes = email.encode("utf-8")
     # 2. Create a SHA-256 hash of the email
+    hashed_object = hashlib.sha256(email_bytes)
+    hashed_value = hashed_object.hexdigest()
     # 3. Return the hash in hexadecimal format
+    print(hashed_value)
+    return hashed_value
     pass
 
 def write_hash_to_file(hash_value, filename="hash.email"):
@@ -41,6 +46,9 @@ def write_hash_to_file(hash_value, filename="hash.email"):
     """
     # TODO: Implement this function
     # 1. Open the file in write mode
+    with open(filename, "w") as hash_file:
+        hash_file.write(hash_value)
+        #hash_file.close()
     # 2. Write the hash value to the file
     # 3. Close the file
     pass
@@ -52,8 +60,14 @@ def main():
     # TODO: Implement this function
     # 1. Check if an email address was provided as a command line argument
     # 2. If not, print an error message and exit with a non-zero status
+    if len(sys.argv) != 2:
+        print("Error: Please provide an email address.\nUsage: python script.py <email>")
+        sys.exit(1)
     # 3. If yes, hash the email address
+    email = sys.argv[1]
+    hased_value = hash_email(email)
     # 4. Write the hash to a file named "hash.email"
+    write_hash_to_file(hased_value)
     pass
 
 if __name__ == "__main__":
